@@ -26,17 +26,17 @@ public class PingServiceTest {
 	}
 	
 	//@Test
-	public void testInvalidString() {
+	public void testInvalidString() throws IOException {
 		pingService.pingIpAddress("ASDFASDF");
 	}
 	
 	//@Test
-	public void testUnreachable() {
+	public void testUnreachable() throws IOException {
 		pingService.pingIpAddress("202.31.113.203");
 	}
 	
 	//@Test
-	public void testGoogle() {
+	public void testGoogle() throws IOException {
 		pingService.pingIpAddress("google.com");
 	}
 
