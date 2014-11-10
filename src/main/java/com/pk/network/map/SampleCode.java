@@ -10,10 +10,9 @@ import java.util.Scanner;
 
 public class SampleCode{
 
-    public static Result index() throws IOException {
+    public static void index() throws IOException {
         doCommand("74.125.236.73");
         //doCommand("hankooktireusa.com");
-        return ok(index.render("Your new application is ready."));
     }
     public static void doCommand(String ipAddress) throws IOException {
         String s = null;
