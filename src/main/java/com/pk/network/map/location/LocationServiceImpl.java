@@ -2,24 +2,29 @@ package com.pk.network.map.location;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
-@Repository("locationDao")
-@Transactional
-public class LocationDaoImpl implements LocationDao{
-
+@Service
+public class LocationServiceImpl implements LocationService {
+	
 	@Autowired
-	private SessionFactory sessionFactory;
+	LocationDao dao;
 
 	@Override
 	public void create(Location location) {
-		Session session = sessionFactory.getCurrentSession();
-		session.persist(location);
+		location.setAddress("Testing");
+		location.setCity("Testing");
+		location.setContactName("Testing");
+		location.setContactPhone("Testing");
+		location.setIpAddress("Testing");
+		location.setLatitude("Testing");
+		location.setLocation("Testing");
+		location.setLongitude("Testing");
+		location.setName("Testing");
+		location.setState("Testing");
+		location.setZip("Testing");
+		dao.create(location);
 		
 	}
 
@@ -46,6 +51,5 @@ public class LocationDaoImpl implements LocationDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	
 }

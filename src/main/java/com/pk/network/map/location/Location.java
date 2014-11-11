@@ -1,10 +1,16 @@
 package com.pk.network.map.location;
 
-/*
- * TODO: Make Entity Class
- */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="location")
 public class Location {
-	
+	@Id
+	@Column(name="id")
+	private int id;
 	private String name;
 	private String address;
 	private String city;
