@@ -41,10 +41,11 @@ public class LocationDaoImpl implements LocationDao{
 		
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Location> list() {
-		// TODO Auto-generated method stub
-		return null;
+		Session session = sessionFactory.getCurrentSession();
+		return session.createQuery("from Location").list();
 	}
 
 	

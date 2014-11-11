@@ -48,8 +48,7 @@ public class LocationServiceImpl implements LocationService {
 
 	@Override
 	public List<Location> list() {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.list();
 	}
 	
 }
