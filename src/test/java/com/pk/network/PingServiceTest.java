@@ -6,8 +6,8 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import com.pk.network.map.PingService;
-import com.pk.network.map.PingServiceImpl;
+import com.pk.network.service.PingService;
+import com.pk.network.service.PingServiceImpl;
 
 @Controller
 public class PingServiceTest {

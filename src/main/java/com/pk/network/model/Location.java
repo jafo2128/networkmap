@@ -1,4 +1,4 @@
-package com.pk.network.map.location;
+package com.pk.network.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

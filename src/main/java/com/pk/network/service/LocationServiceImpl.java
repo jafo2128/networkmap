@@ -2,7 +2,7 @@ package com.pk.network.service;
 
 import java.util.List;
 
-import com.pk.network.map.location.Location;
+import com.pk.network.model.Location;
 import com.pk.network.dao.LocationDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.pk.network.dao;
 
-import com.pk.network.map.location.Location;
+import com.pk.network.model.Location;
 
 import java.util.List;
 

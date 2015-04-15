@@ -1,5 +1,6 @@
-package com.pk.network.map;
+package com.pk.network.controller;
 
+import com.pk.network.service.PingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
