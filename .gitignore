@@ -5,6 +5,11 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+## Directory-based project format:
+.idea/
+.settings/
+target/
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
@@ -26,7 +31,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
