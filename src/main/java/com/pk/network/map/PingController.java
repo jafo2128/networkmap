@@ -5,8 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.pk.network.map.location.Location;
-import com.pk.network.map.location.LocationService;
+import com.pk.network.service.LocationService;
 
 @Controller
 public class PingController {
@@ -20,7 +19,7 @@ public class PingController {
 	@RequestMapping("/")
 	public String showLocations() {
 		// Run DAO and pull all pings
-		locationService.create(new Location());
+		//locationService.create(new Location());
 		return "map";
 	}
 	

@@ -1,9 +1,10 @@
-package com.pk.network.map.location;
+package com.pk.network.dao;
 
 import java.util.List;
 
 import javax.transaction.Transactional;
 
+import com.pk.network.map.location.Location;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
